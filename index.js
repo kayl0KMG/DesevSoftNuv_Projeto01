@@ -3,6 +3,11 @@ const app = express();    //inicia o express
 
 //npx nodemon index.js - não pecisa ficar apertando o crtl C para fechar a porta pra salvar as alteraçoes pq essa extensão faz isso automaticamente
 
+//criando a rota inicial
+app.get("/", function(req,res){
+    res.send("<h1>Bem vindo ao meu site!</h1>");
+})
+
 //rota com query params
 app.get("/consulta", function (req, res) {        // req dados enviados pelo cliente
     var cpf = req.query["cpf"];
