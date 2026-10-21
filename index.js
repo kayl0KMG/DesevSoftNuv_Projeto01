@@ -3,6 +3,11 @@ const app = express();    //inicia o express
 
 //npx nodemon index.js - não pecisa ficar apertando o crtl C para fechar a porta pra salvar as alteraçoes pq essa extensão faz isso automaticamente
 
+//rota sobre
+app.get("/sobre", function(req, res){
+    res.send("<h1>Sobre</h1><p>Projeto feito por Kayla Medeiros sobre consultas por cpf</p>");
+})
+
 //criando a rota inicial
 app.get("/", function(req,res){
     res.send("<h1>Bem vindo ao meu site💫</h1>");
