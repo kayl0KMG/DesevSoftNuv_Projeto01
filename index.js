@@ -5,7 +5,7 @@ const app = express();    //inicia o express
 
 //criando a rota inicial
 app.get("/", function(req,res){
-    res.send("<h1>Bem vindo ao meu site!</h1>");
+    res.send("<h1>Bem vindo ao meu site💫</h1>");
 })
 
 //rota com query params
